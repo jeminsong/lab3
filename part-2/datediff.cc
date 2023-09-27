@@ -4,6 +4,7 @@
 // Partners: @Devon-T928
 
 #include <iostream>
+#include <string>
 
 int JulianDay(int month, int day, int year) {
  int mon = (14-month) / 12;
