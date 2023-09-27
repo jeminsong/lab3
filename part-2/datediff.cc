@@ -32,12 +32,13 @@ int PromptForInt(const std::string& query) {
   return input;
 }
 int main(int argc, char* argv[]) {
-  int start_month = PromptForInt("Enter a start month:");
-  int start_day = PromptForInt("Enter a start day:");
-  int start_year = PromptForInt("Enter a start year:");
-  int end_month = PromptForInt("Enter an end month:");
-  int end_day = PromptForInt("Enter an end day:");
-  int end_year = PromptForInt("Enter an end year:");
+  int start_month = PromptForInt("Enter a start month:\n");
+  int start_day = PromptForInt("Enter a start day:\n");
+  int start_year = PromptForInt("Enter a start year:\n");
+  int end_month = PromptForInt("Enter an end month:\n");
+  int end_day = PromptForInt("Enter an end day:\n");
+  int end_year = PromptForInt("Enter an end year:\n");
+
   int difference = DateDifference(start_month, start_day, start_year, end_month,
                                   end_day, end_year);
   std::cout << "The number of days between ";
@@ -45,6 +46,6 @@ int main(int argc, char* argv[]) {
   std::cout << " and ";
   PrintDate(end_month, end_day, end_year);
   std::cout << " is " << difference << " days."
-           << ".\n";
+            << ".\n";
   return 0;
 }
