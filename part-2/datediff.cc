@@ -31,12 +31,12 @@ int PromptForInt(const std::string& query) {
   return input;
 }
 int main(int argc, char* argv[]) {
- int start_month = PromptForInt("Enter a start_month: ");
- int start_day = PromptForInt("Enter a start date: ");
- int start_year = PromptForInt("Enter a start year: ");
- int end_month = PromptForInt("Enter an end month: ");
- int end_day = PromptForInt("Enter an end day: ");
- int end_year = PromptForInt("Enter an end year: "); 
+ int start_month = PromptForInt("Enter a start_month:");
+ int start_day = PromptForInt("Enter a start date:");
+ int start_year = PromptForInt("Enter a start year:");
+ int end_month = PromptForInt("Enter an end month:");
+ int end_day = PromptForInt("Enter an end day:");
+ int end_year = PromptForInt("Enter an end year:"); 
  int difference = DateDifference (
      start_month, start_day, start_year,
      end_month, end_day, end_year);
