@@ -7,7 +7,7 @@
 #include <string>
 
 int JulianDay(int month, int day, int year) {
- int mon = (14-month) / 12;
+ int mon = (14 - month) / 12;
  int yar = year + 4800 - mon;
  int mos = month + (12 * mon) - 3;
  int day_term = day + (153 * mos + 2) / 5;
@@ -38,13 +38,13 @@ int main(int argc, char* argv[]) {
  int end_month = PromptForInt("Enter an end month:");
  int end_day = PromptForInt("Enter an end day:");
  int end_year = PromptForInt("Enter an end year:");
- int difference = DateDifference (
-     start_month, start_day, start_year,
-     end_month, end_day, end_year);
+ int difference = DateDifference (start_month, start_day, start_year, end_month,
+                                  end_day, end_year);
  std::cout << "The number of days between ";
  PrintDate(start_month, start_day, start_year);
  std::cout << " and ";
  PrintDate(end_month, end_day, end_year);
- std::cout << " is " << difference << " days." << ".\n";
+ std::cout << " is " << difference << " days."
+           << ".\n";
  return 0;
 }
