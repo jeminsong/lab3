@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-int julian_day(int month, int day, int year) {
+int JulianDay(int month, int day, int year) {
  int mon = (14-month) / 12;
  int yar = year + 4800 - mon;
  int mos = month + (12 * mon) - 3;
@@ -16,8 +16,8 @@ int julian_day(int month, int day, int year) {
 }
 int DateDifference(int start_month, int start_day, int start_year,
                    int end_month, int end_day, int end_year) {
- int start_jd = julian_day(start_month, start_day, start_year);
- int end_jd = julian_day(end_month, end_day, end_year);
+ int start_jd = JulianDay(start_month, start_day, start_year);
+ int end_jd = JulianDay(end_month, end_day, end_year);
  return end_jd - start_jd;
 }
 
